@@ -1,0 +1,172 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+  background: url("/images/feanne-eyes-2014-1-.jpeg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+	margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsla(0,0%,100%,0.80);
+  background-blend-mode: overlay;
+}
+
+h1,
+h2,
+h3 {
+  color: #4d0000;
+  
+}
+
+a {
+  color:#660000;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: #660000;
+}
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+.main-header {
+  margin: 0 auto;
+
+}
+
+.name a,
+.slogan a,
+.main-nav a {
+  text-align: center;
+  display: inline-block;
+  padding: 20px 20px;
+}
+
+.main-nav {
+  justify-content: center;
+  background-color: #cccccc;
+}
+
+.text-desc {
+  text-align: center;
+  color:#660000;
+}
+
+.main-nav a {
+  color: #666666;
+  padding: 12px 40px;
+}
+
+.main-nav a:hover {
+  color: #cc2900;
+}
+
+.background {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 170px 170px;
+  grid-column-gap: 30px;
+  justify-items: center;
+  align-items: center;
+}
+
+.main-footer {
+  text-align: center;
+  margin-top: 90px;
+  padding: 1.8em 0;
+  background: #cccccc;
+}
+
+/* ================================= 
+  Scrolling Text
+==================================== */
+
+.text-desc {
+height: 50px; 
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+}
+.text-desc p {
+position: absolute;
+width: 100%;
+height: 50px;
+margin: 0;
+line-height: 20px;
+text-align: center;
+/* Starting position */
+transform:translateX(100%);
+/* Apply animation to this element */ 
+animation: scroll-left 20s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+0% { transform: translateX(100%); }
+100% { transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+0% { transform: translateX(100%); }
+100% { transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+0% { 
+transform: translateX(100%); 
+transform: translateX(100%); 
+transform: translateX(100%); 
+}
+100% { 
+transform: translateX(-100%); 
+transform: translateX(-100%);
+transform: translateX(-100%); 
+}
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+  .main-header {
+    width: 80%;
+    height: 80px;
+}
+
+  .main-nav {
+  height: 50px;
+}
+
+.background {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+  
+}
+
